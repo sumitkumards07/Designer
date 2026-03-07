@@ -1,0 +1,70 @@
+.heroSection {
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 100px;
+    /* Offset for navbar */
+    text-align: center;
+    overflow: hidden;
+}
+
+.heroContainer {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+}
+
+.statusBadge {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 16px;
+    background-color: var(--pill-bg);
+    border: 1px solid var(--card-border);
+    border-radius: var(--radius-full);
+    backdrop-filter: blur(10px);
+}
+
+.statusDot {
+    width: 8px;
+    height: 8px;
+    background-color: var(--accent-dot);
+    border-radius: 50%;
+    box-shadow: 0 0 10px var(--accent-dot);
+}
+
+.statusText {
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--text-main);
+}
+
+.heroTitle {
+    font-size: clamp(64px, 12vw, 144px);
+    line-height: 0.9;
+    font-weight: 400;
+    /* Mona Sans Variable */
+    letter-spacing: -0.04em;
+    background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0.6) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-transform: uppercase;
+}
+
+.heroSubtitle {
+    font-size: 20px;
+    color: var(--text-muted);
+    max-width: 400px;
+    line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+    .heroContainer {
+        gap: 24px;
+    }
+}

@@ -1,0 +1,118 @@
+.footer {
+    padding-top: 120px;
+    padding-bottom: 40px;
+    position: relative;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 120px;
+}
+
+.cta {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 24px;
+}
+
+.ctaBadge {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 16px;
+    background-color: var(--pill-bg);
+    border: 1px solid var(--card-border);
+    border-radius: var(--radius-full);
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.redDot {
+    width: 8px;
+    height: 8px;
+    background-color: #ef4444;
+    /* Red dot for closing/talking indicator */
+    border-radius: 50%;
+    box-shadow: 0 0 10px #ef4444;
+}
+
+.ctaTitle {
+    font-family: var(--font-mona);
+    font-size: clamp(64px, 12vw, 144px);
+    line-height: 0.9;
+    font-weight: 400;
+    /* Mona Sans Variable */
+    letter-spacing: -0.04em;
+    background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0.6) 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-transform: uppercase;
+}
+
+.ctaText {
+    font-size: 20px;
+    color: var(--text-muted);
+    max-width: 400px;
+    line-height: 1.6;
+}
+
+.ctaButton {
+    margin-top: 16px;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background-color: var(--text-main);
+    color: var(--text-dark);
+    font-weight: 600;
+    font-size: 16px;
+    padding: 16px 32px;
+    border-radius: var(--radius-full);
+    transition: transform var(--transition-fast), background-color var(--transition-fast);
+}
+
+.ctaButton:hover {
+    background-color: #e5e5e5;
+    transform: scale(1.05);
+}
+
+.bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 40px;
+    border-top: 1px solid var(--card-border);
+}
+
+.socials {
+    display: flex;
+    gap: 24px;
+}
+
+.socialLink {
+    color: var(--text-muted);
+    font-size: 14px;
+    font-weight: 500;
+    transition: color var(--transition-fast);
+}
+
+.socialLink:hover {
+    color: var(--text-main);
+}
+
+.copyright {
+    color: var(--text-muted);
+    font-size: 14px;
+}
+
+@media (max-width: 768px) {
+    .bottom {
+        flex-direction: column;
+        gap: 24px;
+        align-items: center;
+        text-align: center;
+    }
+}

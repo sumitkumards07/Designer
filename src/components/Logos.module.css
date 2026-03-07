@@ -1,0 +1,49 @@
+.logosSection {
+    padding-top: 40px;
+    padding-bottom: 80px;
+}
+
+.logosContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+}
+
+.logosText {
+    color: var(--text-muted);
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+}
+
+.logoFlex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 64px;
+    align-items: center;
+}
+
+.logoItem {
+    opacity: 0.5;
+    filter: grayscale(100%);
+    transition: opacity var(--transition-fast), filter var(--transition-fast);
+    font-family: var(--font-mona);
+    font-weight: 700;
+    font-size: 24px;
+    letter-spacing: -0.04em;
+    color: var(--text-main);
+    text-transform: lowercase;
+}
+
+.logoItem:hover {
+    opacity: 1;
+    filter: grayscale(0%);
+}
+
+@media (max-width: 768px) {
+    .logoFlex {
+        gap: 32px;
+    }
+}

@@ -1,0 +1,91 @@
+.expertiseSection {
+    /* section padding from global */
+}
+
+.header {
+    margin-bottom: 64px;
+}
+
+.title {
+    font-size: clamp(40px, 6vw, 80px);
+    /* Geist */
+    font-family: var(--font-geist);
+    font-weight: 500;
+    color: var(--text-main);
+    text-transform: none;
+    letter-spacing: -0.02em;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+}
+
+.card {
+    background-color: var(--card-bg);
+    border: 1px solid var(--card-border);
+    border-radius: var(--radius-md);
+    padding: 40px;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    transition: transform var(--transition-smooth), border-color var(--transition-fast);
+    backdrop-filter: blur(20px);
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    border-color: rgba(255, 255, 255, 0.2);
+}
+
+.cardGlow {
+    position: absolute;
+    top: -50px;
+    left: -50px;
+    width: 150px;
+    height: 150px;
+    background: radial-gradient(circle, rgba(147, 51, 234, 0.4) 0%, rgba(147, 51, 234, 0) 70%);
+    filter: blur(40px);
+    z-index: 0;
+    transition: opacity var(--transition-fast);
+    opacity: 0;
+}
+
+.card:hover .cardGlow {
+    opacity: 1;
+}
+
+.cardTitle {
+    font-family: var(--font-geist);
+    font-size: 24px;
+    font-weight: 500;
+    color: var(--text-main);
+    text-transform: none;
+    z-index: 1;
+}
+
+.cardDesc {
+    color: var(--text-muted);
+    font-size: 16px;
+    line-height: 1.6;
+    z-index: 1;
+}
+
+@media (max-width: 992px) {
+    .grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .grid {
+        grid-template-columns: 1fr;
+    }
+
+    .header {
+        margin-bottom: 40px;
+    }
+}
