@@ -5,26 +5,26 @@ import styles from './Work.module.css';
 const Work = () => {
     const projects = [
         {
-            title: "Nano Banana",
-            meta: "Industrial Design · 2025",
-            description: "A futuristic personal tech device that redefines minimalist ergonomics with a bold aesthetic.",
-            image: "/projects/nano-banana.png",
+            title: "Donnelly Dashboard",
+            meta: "Construction Management · 2025",
+            description: "A comprehensive project management dashboard tracking budget, issues, and tasks for real estate development.",
+            image: "/projects/donnelly.png",
             color: "yellow",
             size: "large"
         },
         {
-            title: "Guidy",
-            meta: "Templates · 2025",
-            description: "Minimal Brand Guidelines template for creatives.",
-            image: "/projects/guidy.png",
+            title: "Jira Roadmap",
+            meta: "Agile Planning · 2025",
+            description: "An intuitive roadmap view for tracking epics, sprint progress, and team capacity across multiple milestones.",
+            image: "/projects/jira.png",
             color: "magenta",
             size: "medium"
         },
         {
-            title: "Feature",
-            meta: "Framer · 2025",
-            description: "A premium SaaS template for modern product showcases.",
-            image: "/projects/feature.png",
+            title: "CodeBattle",
+            meta: "Interactive Platform · 2025",
+            description: "A gamified coding platform ('Code is Warfare') empowering developers to master skills through tactical challenges.",
+            image: "/projects/codebattle.png",
             color: "blue",
             size: "small"
         }
