@@ -23,19 +23,21 @@ const Testimonials = () => {
     return (
         <section className={`section`}>
             <div className={`container`}>
-                <div className={styles.grid}>
-                    {testimonials.map((test, index) => (
-                        <div key={index} className={styles.card}>
-                            <p className={styles.quote}>"{test.text}"</p>
-                            <div className={styles.author}>
-                                <div className={styles.avatar}></div>
-                                <div className={styles.authorInfo}>
-                                    <p className={styles.name}>{test.name}</p>
-                                    <p className={styles.role}>{test.role}</p>
+                <div className={styles.scrollContainer}>
+                    <div className={styles.scrollTrack}>
+                        {[...testimonials, ...testimonials].map((test, index) => (
+                            <div key={index} className={styles.card}>
+                                <p className={styles.quote}>"{test.text}"</p>
+                                <div className={styles.author}>
+                                    <div className={styles.avatar}></div>
+                                    <div className={styles.authorInfo}>
+                                        <p className={styles.name}>{test.name}</p>
+                                        <p className={styles.role}>{test.role}</p>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                    ))}
+                        ))}
+                    </div>
                 </div>
             </div>
         </section>
